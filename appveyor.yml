@@ -1,7 +1,16 @@
-version: 1.0.{build}
-
+version: '1.0.{build}'
+#assembly_info:
+#  patch: true
+#  file: '**\*.csproj'
+dotnet_csproj:
+  patch: true
+  file: 'AuditFondLab1.csproj'
+  version: 5.0.3
+  package_version: '{version}'
+  assembly_version: '{version}'
+  file_version: '{version}'
+  informational_version: '{version}'
+build:
+  project: AuditFondLab1.sln
 before_build:
   - nuget restore
-
-build:
-  verbosity: minimal
