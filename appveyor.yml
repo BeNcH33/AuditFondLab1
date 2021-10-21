@@ -6,4 +6,4 @@ before_build:
   - nuget restore
 test:
   assemblies:
-    - '**\*.Test.dll'
+    - '**\*.AuditFondLab1.dll'
