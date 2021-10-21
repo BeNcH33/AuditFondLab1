@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace AuditFondLab1
 {
     [TestFixture]
-    class MyTest
+    public class MyTest
     {
         Audit audit;
         [SetUp]
