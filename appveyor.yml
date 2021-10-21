@@ -11,6 +11,7 @@ dotnet_csproj:
   file_version: '{version}'
   informational_version: '{version}'
 build:
-  project: AuditFondLab1.sln
+  #project: AuditFondLab1.sln
+  - dotnet test
 before_build:
   - nuget restore
