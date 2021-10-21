@@ -10,7 +10,7 @@ dotnet_csproj:
   assembly_version: '{version}'
   file_version: '{version}'
   informational_version: '{version}'
-build:
+build_script:
   #project: AuditFondLab1.sln
   - dotnet test
 before_build:
