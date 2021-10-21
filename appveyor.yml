@@ -1,6 +1,9 @@
 image: Visual Studio 2019
-build_script:
+#build_script:
   #project: AuditFondLab1.sln
-  - dotnet test #AuditFondLab1.sln
+ # - dotnet test #AuditFondLab1.sln
 before_build:
   - nuget restore
+test:
+  assemblies:
+    - '**\*.Test.dll'
