@@ -2,8 +2,14 @@ image: Visual Studio 2019
 #build_script:
   #project: AuditFondLab1.sln
  # - dotnet test #AuditFondLab1.sln
+
+
 before_build:
   - nuget restore
+  
+build:
+  verbosity: minimal
+  
 test:
   assemblies:
     - '**\*.AuditFondLab1.dll'
