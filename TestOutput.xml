@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="12323a91-2170-488d-a8c5-93255220a356" name="slava@BENCH-DESKTOP 2021-10-22 10:35:08" runUser="BENCH-DESKTOP\slava" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2021-10-22T10:35:08.7881165+03:00" queuing="2021-10-22T10:35:08.7881179+03:00" start="2021-10-22T10:35:05.4057888+03:00" finish="2021-10-22T10:35:08.8001306+03:00" />
+  <TestSettings name="default" id="ece1862f-d353-4c6c-b6d1-ff8c2a783f9d">
+    <Deployment runDeploymentRoot="slava_BENCH-DESKTOP_2021-10-22_10_35_08" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="d21ff913-2351-4718-b6b7-51be30f35d39" testId="79371a3f-98d7-f8ba-63ed-95d3f1e23366" testName="testAddTeacher" computerName="BENCH-DESKTOP" duration="00:00:00.0035460" startTime="2021-10-22T10:35:08.5313993+03:00" endTime="2021-10-22T10:35:08.5349458+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d21ff913-2351-4718-b6b7-51be30f35d39" />
+    <UnitTestResult executionId="a2b5d92a-b878-4a5a-b114-64b3d9d817bf" testId="47e34086-abf3-c40c-d0d1-f3ae53763952" testName="testIdTeacher" computerName="BENCH-DESKTOP" duration="00:00:00.0038300" startTime="2021-10-22T10:35:08.5350096+03:00" endTime="2021-10-22T10:35:08.5388382+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2b5d92a-b878-4a5a-b114-64b3d9d817bf" />
+    <UnitTestResult executionId="4782c29e-8844-418e-b4a9-20d5b217915b" testId="117c2f18-f8f2-a8e7-9f1b-4436b25fe8cd" testName="addRoom" computerName="BENCH-DESKTOP" duration="00:00:00.0121340" startTime="2021-10-22T10:35:08.5160127+03:00" endTime="2021-10-22T10:35:08.5280189+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4782c29e-8844-418e-b4a9-20d5b217915b" />
+    <UnitTestResult executionId="4ff2e4ed-6724-4205-a30d-46f3e8b38aa1" testId="802d9026-2a7e-5e48-d6e4-23822307effb" testName="testRemoveTeacher" computerName="BENCH-DESKTOP" duration="00:00:00.0004750" startTime="2021-10-22T10:35:08.5388677+03:00" endTime="2021-10-22T10:35:08.5393413+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ff2e4ed-6724-4205-a30d-46f3e8b38aa1" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="testIdTeacher" storage="d:\институт\4 курс\1 семестр\тестирование по\лабораторная работа 1\auditfondlab1\auditfondlab1\bin\debug\net5.0\auditfondlab1.dll" id="47e34086-abf3-c40c-d0d1-f3ae53763952">
+      <Execution id="a2b5d92a-b878-4a5a-b114-64b3d9d817bf" />
+      <TestMethod codeBase="D:\Институт\4 курс\1 семестр\Тестирование ПО\Лабораторная работа 1\AuditFondLab1\AuditFondLab1\bin\Debug\net5.0\AuditFondLab1.dll" adapterTypeName="executor://nunit3testexecutor/" className="AuditFondLab1.MyTest" name="testIdTeacher" />
+    </UnitTest>
+    <UnitTest name="testRemoveTeacher" storage="d:\институт\4 курс\1 семестр\тестирование по\лабораторная работа 1\auditfondlab1\auditfondlab1\bin\debug\net5.0\auditfondlab1.dll" id="802d9026-2a7e-5e48-d6e4-23822307effb">
+      <Execution id="4ff2e4ed-6724-4205-a30d-46f3e8b38aa1" />
+      <TestMethod codeBase="D:\Институт\4 курс\1 семестр\Тестирование ПО\Лабораторная работа 1\AuditFondLab1\AuditFondLab1\bin\Debug\net5.0\AuditFondLab1.dll" adapterTypeName="executor://nunit3testexecutor/" className="AuditFondLab1.MyTest" name="testRemoveTeacher" />
+    </UnitTest>
+    <UnitTest name="testAddTeacher" storage="d:\институт\4 курс\1 семестр\тестирование по\лабораторная работа 1\auditfondlab1\auditfondlab1\bin\debug\net5.0\auditfondlab1.dll" id="79371a3f-98d7-f8ba-63ed-95d3f1e23366">
+      <Execution id="d21ff913-2351-4718-b6b7-51be30f35d39" />
+      <TestMethod codeBase="D:\Институт\4 курс\1 семестр\Тестирование ПО\Лабораторная работа 1\AuditFondLab1\AuditFondLab1\bin\Debug\net5.0\AuditFondLab1.dll" adapterTypeName="executor://nunit3testexecutor/" className="AuditFondLab1.MyTest" name="testAddTeacher" />
+    </UnitTest>
+    <UnitTest name="addRoom" storage="d:\институт\4 курс\1 семестр\тестирование по\лабораторная работа 1\auditfondlab1\auditfondlab1\bin\debug\net5.0\auditfondlab1.dll" id="117c2f18-f8f2-a8e7-9f1b-4436b25fe8cd">
+      <Execution id="4782c29e-8844-418e-b4a9-20d5b217915b" />
+      <TestMethod codeBase="D:\Институт\4 курс\1 семестр\Тестирование ПО\Лабораторная работа 1\AuditFondLab1\AuditFondLab1\bin\Debug\net5.0\AuditFondLab1.dll" adapterTypeName="executor://nunit3testexecutor/" className="AuditFondLab1.MyTest" name="addRoom" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="79371a3f-98d7-f8ba-63ed-95d3f1e23366" executionId="d21ff913-2351-4718-b6b7-51be30f35d39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47e34086-abf3-c40c-d0d1-f3ae53763952" executionId="a2b5d92a-b878-4a5a-b114-64b3d9d817bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="117c2f18-f8f2-a8e7-9f1b-4436b25fe8cd" executionId="4782c29e-8844-418e-b4a9-20d5b217915b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="802d9026-2a7e-5e48-d6e4-23822307effb" executionId="4ff2e4ed-6724-4205-a30d-46f3e8b38aa1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Список результатов" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Все загруженные результаты" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.0.0.0: Test execution started&#xD;
+Running all tests in D:\Институт\4 курс\1 семестр\Тестирование ПО\Лабораторная работа 1\AuditFondLab1\AuditFondLab1\bin\Debug\net5.0\AuditFondLab1.dll&#xD;
+   NUnit3TestExecutor discovered 4 of 4 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.0.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
