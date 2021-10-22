@@ -2,7 +2,7 @@ image: Visual Studio 2019
 #build_script:
   #project: AuditFondLab1.sln
  # - dotnet test #AuditFondLab1.sln
-
+$wc.UploadFile("https://ci.appveyor.com/api/testresults/nunit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\TestOutput.xml))
 
 before_build:
   - nuget restore
@@ -11,5 +11,3 @@ before_build:
 test:
   assemblies:
     - '**\*.AuditFondLab1.dll'
-
-$wc.UploadFile("https://ci.appveyor.com/api/testresults/nunit/$($env:APPVEYOR_JOB_ID)", (Resolve-Path .\TestOutput.xml))
