@@ -40,7 +40,7 @@ namespace AuditFondLab1
         public void testRemoveTeacher()
         {
             Assert.DoesNotThrow(() => { audit.removeTeacher(1); }); //Преподователь удалиться
-            Assert.DoesNotThrow(() => { audit.removeTeacher(2); }); //Удалиться преподватель с другим id 
+            Assert.DoesNotThrow(() => { audit.removeTeacher(2); }); //Удалиться преподватель с другим id попробовать 0 -1
         }
 
         [Test]

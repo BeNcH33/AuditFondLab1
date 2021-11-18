@@ -17,7 +17,7 @@ namespace AuditFondLab1
         //Добавление новой аудитории
         public void addRoom(string nameRoom, int count = 1)
         {
-            if (nameRoom == "" || nameRoom == " ")
+            if (nameRoom == null)
             {
                 throw new Exception("Не правильный вариант ввода названия");
             }
@@ -33,6 +33,14 @@ namespace AuditFondLab1
                 Room[nameRoom] += count;
                 return;
             }
+        }
+        public void removeRoom(string name)
+        {
+            if (Room.ContainsKey(name))
+            {
+                Room.Remove(name);
+            }
+            else { throw new Exception("Возникла ошибка в удалении)"); }
         }
 
 
@@ -57,6 +65,7 @@ namespace AuditFondLab1
             {
                 Teacher.Remove(idTeacher);
             }
+            else  throw new Exception("Возникла ошибка в удалении)"); 
         }
 
         public int generateIdTeacher()
