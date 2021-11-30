@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace AuditFondLab1
 {
@@ -11,6 +10,7 @@ namespace AuditFondLab1
         public Dictionary<string, int> Room { get; } = new Dictionary<string, int>();
 
         public Dictionary<int, string> Teacher { get; } = new Dictionary<int, string>();
+        public Dictionary<int, string> BusyAudi { get; } = new Dictionary<int, string>();
 
 
 
@@ -34,6 +34,7 @@ namespace AuditFondLab1
                 return;
             }
         }
+        //Удаление созданной аудитории//
         public void removeRoom(string name)
         {
             if (Room.ContainsKey(name))
@@ -43,9 +44,44 @@ namespace AuditFondLab1
             else { throw new Exception("Возникла ошибка в удалении)"); }
         }
 
+        public void takeAuditors(string NameAudi, int idTeacher) //Добавление аудитории к определенному преподователю //
+        {
+            if (Room.ContainsKey(NameAudi) && Teacher.ContainsKey(idTeacher))
+            {
+                BusyAudi.Add(idTeacher, NameAudi);
+            }
+            else
+            {
+                throw new Exception("Невозможно это выполнить!");
+            }
+        }
+        public void RemoveAudi(int idTeacher) //Снятие аудитории к определенному преподователю //
+        {
+            if (BusyAudi.ContainsKey(idTeacher))
+            {
+                BusyAudi.Remove(idTeacher);
+            }
+            else 
+            {
+                throw new Exception("Снятие аудитории невозможно!");
+            }
+        }
 
-            //Добавление нового преподователя
-            public void addTeacher(string nameTeacher)
+        public int countAuditors() //Подсчет всех доступных аудиторий
+        {
+            int count = 0;
+
+            foreach (var v in Room.Keys)
+            {
+                count += Room[v];
+            }
+
+            return count;
+        }
+
+
+        //Добавление нового преподователя//
+        public void addTeacher(string nameTeacher)
         {
             if (nameTeacher != null)
             {
@@ -57,7 +93,7 @@ namespace AuditFondLab1
             }
         }
 
-        //Удаление преподователя
+        //Удаление преподователя//
 
         public void removeTeacher(int idTeacher)
         {
