@@ -61,7 +61,7 @@ namespace AuditFondLab1
             {
                 BusyAudi.Remove(idTeacher);
             }
-            else 
+            else
             {
                 throw new Exception("Снятие аудитории невозможно!");
             }
@@ -76,6 +76,12 @@ namespace AuditFondLab1
                 count += Room[v];
             }
 
+            return count;
+        }
+        public int countTeachers() //Подсчет всех преподователей
+        {
+            int count = 0;
+            count += Teacher.Count;
             return count;
         }
 
@@ -93,6 +99,12 @@ namespace AuditFondLab1
             }
         }
 
+        public int countBusyAuditors() //Подсчет всех занятых аудиторий
+        {
+            int count = BusyAudi.Count;
+            return count;
+        }
+
         //Удаление преподователя//
 
         public void removeTeacher(int idTeacher)
@@ -101,7 +113,7 @@ namespace AuditFondLab1
             {
                 Teacher.Remove(idTeacher);
             }
-            else  throw new Exception("Возникла ошибка в удалении)"); 
+            else throw new Exception("Возникла ошибка в удалении)");
         }
 
         public int generateIdTeacher()
